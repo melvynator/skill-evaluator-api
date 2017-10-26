@@ -1,0 +1,40 @@
+{
+  "settings" : {
+    "index" : {
+      "number_of_shards" : 1,
+      "number_of_replicas" : 0
+    }
+  },
+  "mappings": {
+    "tag": {
+      "properties": {
+         "count": {
+           "type": "integer"
+         },
+         "name": {
+           "type": "keyword"
+         },
+        "last_update": {
+          "type": "date",
+          "format": "epoch_second"
+        },
+        "question_frequency": {
+          "type": "nested",
+          "properties": {
+            "from": {
+              "type": "date",
+              "format": "epoch_second"
+            },
+            "to": {
+              "type": "date",
+              "format": "epoch_second"
+            },
+            "count": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    }
+  }
+}
