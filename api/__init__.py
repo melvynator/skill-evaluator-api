@@ -15,7 +15,7 @@ es = Elasticsearch([es_host])
 STACKOVERFLOW_INITIAL_DATE = datetime.date(year=2008, month=6, day=1)
 
 # URLs
-POPULARITY_URL = "https://api.stackexchange.com/2.2/questions?fromdate={0}&todate={1}&tagged={2}&site=stackoverflow&filter=!--KJ7DG6tXUG&key=wH4Yhv0yV3gKdsZYY7IeCg(("
+POPULARITY_URL = "https://api.stackexchange.com/2.2/questions?fromdate={0}&todate={1}&tagged={2}&site=stackoverflow&filter=!--KJ7DG6tXUG&key=KEY"
 YCOMBINATOR = "https://news.ycombinator.com/"
 WHOISHIRING_SEED = "submitted?id=whoishiring"
 
